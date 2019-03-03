@@ -1,0 +1,92 @@
+﻿
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+ <title>TradeFinance Smart Contract</title>
+
+ <link rel="stylesheet" type="text/css" href="TradeFinanceHome.css">
+
+ <style type="text/css">
+
+    body {
+     background-color:#F0F0F0;
+     padding-top: 1em;
+     font-family: �Raleway�,�Source Sans Pro�, �Arial�;
+    }
+
+ </style>
+
+ <script src="./../../EthereumInstallations/node_modules/web3/dist/web3.min.js"></script>
+
+</head>
+
+
+<body>
+
+    <div class="header" style="color: #302827; width: 95%">
+
+        <a class="Header-Home" onclick='processNavigationBar_ToHome(event);' href="./TradeFinanceHome.html">TradeFinanceHome</a>
+
+        <div class="NavigationBar">
+
+            <a class="Buyer" onclick='processNavigationBar_ToBuyer(event);' href="./TFBuyer.html">Buyer</a>
+            <a class="Buyer-Bank" onclick='processNavigationBar_ToBuyerBank(event);' href="./TFBuyerBank.html">Buyer-Bank</a>
+            <a class="Seller-Bank" onclick='processNavigationBar_ToSellerBank(event);' href="./TFSellerBank.html">Seller-Bank</a>
+            <a class="Seller" onclick='processNavigationBar_ToSeller(event);' href="./TFSeller.html">Seller</a>
+            <a class="Contact-Info" onclick='processNavigationBar_ToContactInfo(event);' href="./TFContactInfo.html">Contract-US</a>
+
+        </div>
+
+    </div>
+
+    <div class="container" style="color: #302827; padding: 1em; width: 95%">
+
+        <h1>Air Miles Smart Contract</h1>
+
+        <h2 id="Contract_CS_Token_Updates"></h2>
+
+        <!--Smart Contract Common State Data Retrievals & Updates-->
+
+        <label for="name" class="col-lg-2 control-label" style="color: #7d4438">Token Count</label>
+        <input id="TokenCountInput" type="text">
+
+        <p>
+            <button id="UpdateButton" style="display:block;margin: 1em 0; padding: 1em 1em"><b><font size="2">Update Token Count</font></b></button>
+        </p>
+
+        <p>
+            <button id="RetrieveButton" style="display:block;margin: 1em 0; padding: 1em 1em"><b><font size="2">Retrieve Token Count</font></b></button>
+        </p>
+
+        <p>
+            <textarea id="TokenCountDisplay" style="background-color: #ccd1d1; color: #6d1c0b">Smart Contracts Tokens</textarea>
+        </p>
+
+
+        <!--Individual Account Data Retrievals & Updates-->
+
+        <br>
+        <br>
+
+        <p>
+            <button id="RetrieveEthersButton" style="display:block;margin: 1em 0; padding: 1em 1em"><b><font size="2">Retrieve Ethers</font></b></button>
+        </p>
+
+        <p>
+            <textarea id="EtherCountDisplay" style="background-color: #ccd1d1; color: #6d1c0b">Ethers @ Account</textarea>
+        </p>
+
+    </div>
+
+</body>
+
+</html>
+
+

@@ -1,0 +1,129 @@
+﻿
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+ <title>TradeFinance Smart Contract</title>
+
+ <link rel="stylesheet" type="text/css" href="TradeFinanceHome.css">
+
+ <style type="text/css">
+
+    body {
+     background-color:#F0F0F0;
+     padding-top: 1em;
+     font-family: �Raleway�,�Source Sans Pro�, �Arial�;
+    }
+
+ </style>
+
+ <script src="./../../EthereumInstallations/node_modules/web3/dist/web3.min.js"></script>
+
+</head>
+
+
+<body>
+
+    <div class="header" style="color: #302827; width: 95%">
+
+        <a class="Header-Home" onclick='processNavigationBar_ToHome(event);' href="./TradeFinanceHome.html">TradeFinanceHome</a>
+
+        <div class="NavigationBar">
+
+            <a class="Buyer" onclick='processNavigationBar_ToBuyer(event);' href="./TFBuyer.html">Buyer</a>
+            <a class="Buyer-Bank" onclick='processNavigationBar_ToBuyerBank(event);' href="./TFBuyerBank.html">Buyer-Bank</a>
+            <a class="Seller-Bank" onclick='processNavigationBar_ToSellerBank(event);' href="./TFSellerBank.html">Seller-Bank</a>
+            <a class="Seller" onclick='processNavigationBar_ToSeller(event);' href="./TFSeller.html">Seller</a>
+            <a class="Contact-Info" onclick='processNavigationBar_ToContactInfo(event);' href="./TFContactInfo.html">Contract-US</a>
+
+        </div>
+
+    </div>
+
+    <div class="container" style="width: 95%">
+
+        <div class="LeftBrowserBox" style="width: 10%">
+        </div>
+
+        <div class="ContentBrowser" style="width: 85%">
+
+            <p id="buffer1" style="padding-bottom : 10px"> </p>
+
+            <h1 class="LetterOfCredit-Status">LetterOfCredit-Status</h1>
+
+            <div class="LetterOfCredit-Details" style="width: 80%">
+
+                <p id="buffer2" style="padding-bottom : 10px"> </p>
+
+                <!-- Retrieve the Latest LoC details of the logged in Buyer -->
+
+                <div class="Loc-Details-Label-Container" style="width: 35%">
+
+                    <label id="Loc_Details_Loc_Id" class="LoC-Details-Loc-Id" style="padding-right: 40px; color: #7d4438">LoC-Id</label>
+                    <br />
+
+                    <label id="Loc_Details_Buyer_Name" class="LoC-Details-Buyer-Name" style="padding-right: 40px; color: #7d4438">Buyer</label>
+                    <br />
+
+                    <label id="Loc_Details_Seller_Name" class="LoC-Details-Seller-Name" style="padding-right: 40px; color: #7d4438">Seller</label>
+                    <br />
+
+                    <label id="Loc_Details_Buyer_Bank_Name" class="LoC-Details-Buyer-Bank-Name" style="padding-right: 40px; color: #7d4438">Buyer Bank</label>
+                    <br />
+
+                    <label id="Loc_Details_Seller_Bank_Name" class="LoC-Details-Seller-Bank-Name" style="padding-right: 40px; color: #7d4438">Seller Bank</label>
+                    <br />
+
+                    <label id="Loc_Details_Shipment" class="LoC-Details-Shipment" style="padding-right: 40px; color: #7d4438">Shipment</label>
+                    <br />
+
+                    <label id="Loc_Details_Shipment_Count" class="LoC-Details-Shipment-Count" style="padding-right: 40px; color: #7d4438">Shipment Count</label>
+                    <br />
+
+                    <label id="Loc_Details_Loc_Amount" class="LoC-Details-LoC-Amount" style="padding-right: 40px; color: #7d4438">LoC Amount</label>
+                    <br />
+
+                    <label id="Loc_Details_Expiry_Date" class="LoC-Details-Expiry-Date" style="padding-right: 40px; color: #7d4438">Expiry Date</label>
+                    <br />
+
+                </div>
+
+                <div class="Loc-Details-Status-Container" style="width: 35%">
+
+                    <!-- Generate Status Details Dynamically and add the details to the form -->
+
+                    <select id="Seller-Input">
+                        <option value="BMW">BMW ( Germany )</option>
+                        <option value="Adidas">Adidas ( Germany )</option>
+                        <option value="Firestar">Firestar ( India )</option>
+                        <option value="Reliance">Reliance ( India )</option>
+                        <option value="Kohinoor">Kohinoor Foods Ltd ( India )</option>
+                        <option value="Eni">Eni ( Italy )</option>
+                        <option value="Finmeccanica">Finmeccanica ( Italy )</option>
+                        <option value="Intel">Intel ( USA )</option>
+                        <option value="PepsiCo">PepsiCo ( USA )</option>
+                        <option value="P & G">Procter & Gamble ( USA )</option>
+                    </select>
+                    <br />
+                    <br />
+
+                </div>
+
+            </div>
+            
+            <!-- Implement dynamic status bar with corresponding state transition -->
+
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+

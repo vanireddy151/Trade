@@ -1,0 +1,116 @@
+﻿
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+ <title>TradeFinance Smart Contract</title>
+
+ <link rel="stylesheet" type="text/css" href="TradeFinanceHome.css">
+
+ <style type="text/css">
+
+    body {
+     background-color:#F0F0F0;
+     padding-top: 1em;
+     font-family: �Raleway�,�Source Sans Pro�, �Arial�;
+    }
+
+ </style>
+
+ <script src="./../../EthereumInstallations/node_modules/web3/dist/web3.min.js"></script>
+
+</head>
+
+
+<body>
+
+    <div class="header" style="color: #302827; width: 95%">
+
+        <a class="Header-Home" onclick='processNavigationBar_ToHome(event);' href="./TradeFinanceHome.html">TradeFinanceHome</a>
+
+        <div class="NavigationBar">
+
+            <a class="Buyer" onclick='processNavigationBar_ToBuyer(event);' href="./TFBuyer.html">Buyer</a>
+            <a class="Seller-Bank" onclick='processNavigationBar_ToSellerBank(event);' href="./TFSellerBank.html">Seller-Bank</a>
+            <a class="Seller" onclick='processNavigationBar_ToSeller(event);' href="./TFSeller.html">Seller</a>
+            <a class="Contact-Info" onclick='processNavigationBar_ToContactInfo(event);' href="./TFContactInfo.html">Contract-US</a>
+
+        </div>
+
+    </div>
+
+    <div class="container" style="width: 100%">
+
+        <div class="LeftBrowserBox" style="width: 10%">
+        </div>
+
+        <div class="ContentBrowser" style="width: 85%">
+
+            <p id="buffer1" style="padding-bottom : 10px"> </p>
+
+            <h1 class="Shipment-Order-Details-Header">Shipment Order Details</h1>
+
+            <div class="Current-Shipment-Order-Details" style="width: 80%">
+
+                <table class="Buyer-Bank-Shipment-Order-Details">
+
+                    <tr class="Shipment-Details-TableRow-Header">
+
+                        <th class="Shipment-Details-TableHeader">ShipmentOrderId</th>
+                        <th class="Shipment-Details-TableHeader">Buyer</th>
+                        <th class="Shipment-Details-TableHeader">Seller</th>
+                        <th class="Shipment-Details-TableHeader">BuyerBank</th>
+                        <th class="Shipment-Details-TableHeader">SellerBank</th>
+                        <th class="Shipment-Details-TableHeader">Shipment</th>
+                        <th class="Shipment-Details-TableHeader">ShipmentCount</th>
+                        <th class="Shipment-Details-TableHeader">ExpiryDate</th>
+                        <th class="Shipment-Details-TableHeader">LocAmount(In tokens)</th>
+                        <th class="Shipment-Details-TableHeader">Select</th>
+
+                    </tr>
+
+                    <!-- ToDo : Dynamically add the Shipment order details : New rows -->
+
+                    <tr class="Shipment-Details-TableRow-Content">
+
+                        <td class="Shipment-Details-Content">Abcd</td>
+                        <td class="Shipment-Details-Content">Dealer</td>
+                        <td class="Shipment-Details-Content">BMW</td>
+                        <td class="Shipment-Details-Content">HDFC</td>
+                        <td class="Shipment-Details-Content">Deutsche Bank</td>
+                        <td class="Shipment-Details-Content">BMW X5</td>
+                        <td class="Shipment-Details-Content">10</td>
+                        <td class="Shipment-Details-Content">2/28/2019</td>
+                        <td class="Shipment-Details-Content">100000</td>
+                        <td class="Shipment-Details-Content"><input type="checkbox" class="Shipment-Details-Content-Checkbox" /></td>
+
+                    </tr>
+
+                </table>
+            
+            </div>
+
+            <div class="BuyerBank-Generate-LoC">
+
+                <br />
+                <br />
+                <label id="Label_buffer" style="padding-right: 15%"></label>
+                <button id="BuyerBank-Generate-LoC-Button" class="Generate-LoC-Button">Generate Letter Of Credit</button>
+
+            </div>
+
+            </div>
+
+    </div>
+
+</body>
+
+</html>
+
+

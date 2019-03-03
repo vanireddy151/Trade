@@ -1,0 +1,258 @@
+﻿
+/* Home Page */
+
+.header {
+    
+    font-family : Times New Roman;
+    color : #110604;
+    font-size : 35px;
+    background-color : #93827F;
+
+    padding-left : 20px;
+    padding-right : 20px;
+    padding-bottom : 10px;
+    padding-top : 20px;
+
+    border : 2px solid;
+
+}
+
+.header a.Current {
+    
+    font-size : 45px;
+
+}
+
+.NavigationBar {
+
+    float : left;
+}
+
+.NavigationBar {
+
+    float : right;
+}
+
+.Buyer {
+    
+    padding-right : 20px;
+}
+
+.Buyer-Bank {
+    
+    padding-right : 20px;
+}
+
+.Buyer-Bank {
+    
+    padding-right : 20px;
+}
+
+.LoC-Status {
+    
+    padding-right : 20px;
+}
+
+.Seller {
+    
+    padding-right : 20px;
+}
+
+.LeftBrowserBox {
+
+    color : #110604;
+    background-color : #7A5A64;
+    float : left;
+    padding-bottom : 100%;
+
+    border : 2px solid;
+}
+
+.ContentBrowser {
+
+    float : left;
+    padding-left : 2%;
+}
+
+/* Contacts Info Page */
+
+.TeamMembers-Heading {
+
+    color : #30112E;
+    background-color : #76382B;
+    padding-top : 10px;
+}
+
+.Team-Info {
+
+    color : #594146;
+    background-color : #A48F8A;
+    padding-top : 10px;
+}
+
+
+/* Buyer */
+
+.Place-Shipment-Order {
+
+    color : #30112E;
+    background-color : #6A3C47;
+    padding-top : 10px;
+    padding-bottom : 10px;
+
+    border : 2px solid;
+}
+
+.Shipment-Label-Container {
+
+    color : #110604;
+    float : left;
+}
+
+.Shipment-Input-Container {
+
+    float : left;
+}
+
+.Shipment-Container-buffer {
+
+    float : left;
+}
+
+.Shipment-Submit-Input {
+
+    clear : left;
+}
+
+.Shipment-Submit-Input button.Shipment-Order-Submit-button{
+
+    clear : left;
+
+    font-family : Times New Roman;
+    color : #110604;
+    font-size : 20px;
+
+    padding-bottom:5px;
+    padding-top:5px;
+    padding-left:20px;
+    padding-right:20px;
+
+    border : 1px solid thick brown;
+}
+
+
+/* Letter of Credit Status Info Page */
+
+.LetterOfCredit-Status {
+
+    color : #30112E;
+    background-color : #76382B;
+    padding-top : 10px;
+}
+
+.LoC-Status-Info {
+
+    color : #594146;
+    background-color : #A48F8A;
+    padding-top : 10px;
+}
+
+.Loc-Details-Label-Container {
+
+    color : #110604;
+    float : left;
+}
+
+.Loc-Details-Status-Container {
+
+    float : left;
+}
+
+
+/* Buyer Bank Page : Show Shipment Order Details & Generate Letter of Credit */
+
+.Shipment-Order-Details-Header {
+
+    color : #30112E;
+    background-color : #6A3C47;
+    padding-top : 10px;
+    padding-bottom : 10px;
+
+    border : 2px solid;
+}
+
+.Shipment-Details-TableRow-Header {
+
+    color : #422319;
+    background-color : #D3A77E;
+    padding-top : 10px;
+    padding-bottom : 10px;
+    padding-left : 10px;
+    padding-right : 10px;
+
+}
+
+.Shipment-Details-TableHeader {
+
+    padding-top : 5px;
+    padding-bottom : 5px;
+    padding-left : 16px;
+    padding-right : 16px;
+
+}
+
+.Shipment-Details-TableRow-Content {
+
+    color : #422319;
+    background-color : #E7D8D9;
+    padding-top : 10px;
+    padding-bottom : 10px;
+    padding-left : 10px;
+    padding-right : 10px;
+
+}
+
+.Shipment-Details-Content {
+
+    padding-top : 5px;
+    padding-bottom : 5px;
+    padding-left : 16px;
+    padding-right : 16px;
+
+}
+
+.Generate-LoC-Button{
+
+    clear : left;
+
+    font-family : Times New Roman;
+    color : #110604;
+    font-size : 20px;
+
+    padding-bottom:5px;
+    padding-top:5px;
+    padding-left:20px;
+    padding-right:20px;
+
+    border : 1px solid thick brown;
+}
+
+.Shipment-Details-Content-Checkbox {
+
+    padding-top : 2px;
+    padding-bottom : 2px;
+    padding-left : 2px;
+    padding-right : 2px;
+
+    width : 15px;
+    height : 15px;
+
+}
+
+
+
+
+
+
+
+

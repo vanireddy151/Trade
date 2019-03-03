@@ -1,0 +1,150 @@
+﻿
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+ <title>TradeFinance Smart Contract</title>
+
+ <link rel="stylesheet" type="text/css" href="TradeFinanceHome.css">
+
+ <style type="text/css">
+
+    body {
+     background-color:#F0F0F0;
+     padding-top: 1em;
+     font-family: �Raleway�,�Source Sans Pro�, �Arial�;
+    }
+
+ </style>
+
+ <script src="./../../EthereumInstallations/node_modules/web3/dist/web3.min.js"></script>
+
+</head>
+
+
+<body>
+
+    <div class="header" style="color: #302827; width: 95%">
+
+        <a class="Header-Home" onclick='processNavigationBar_ToHome(event);' href="./TradeFinanceHome.html">TradeFinanceHome</a>
+
+        <div class="NavigationBar">
+
+            <a class="LoC-Status" onclick='processNavigationBar_ToLoCStatus(event);' href="./TFLoCStatus.html">LoC-Status</a>
+            <a class="Buyer-Bank" onclick='processNavigationBar_ToBuyerBank(event);' href="./TFBuyerBank.html">Buyer-Bank</a>
+            <a class="Seller-Bank" onclick='processNavigationBar_ToSellerBank(event);' href="./TFSellerBank.html">Seller-Bank</a>
+            <a class="Seller" onclick='processNavigationBar_ToSeller(event);' href="./TFSeller.html">Seller</a>
+            <a class="Contact-Info" onclick='processNavigationBar_ToContactInfo(event);' href="./TFContactInfo.html">Contract-US</a>
+
+        </div>
+
+    </div>
+
+    <div class="container" style="width: 95%">
+
+        <div class="LeftBrowserBox" style="width: 10%">
+        </div>
+
+        <div class="ContentBrowser" style="width: 85%">
+
+            <p id="buffer1" style="padding-bottom : 10px"> </p>
+
+            <h1 class="Place-Shipment-Order">Shipment Order Placement</h1>
+
+
+            <div class="LetterOfCredit-Details" style="width: 80%">
+
+                <p id="buffer2" style="padding-bottom : 10px"> </p>
+
+                <div class="Shipment-Label-Container" style="width: 35%">
+
+                    <label id="Label_Seller_Name" class="Label-Seller-Name" style="padding-right: 40px; color: #7d4438">Seller</label>
+                    <br />
+                    <br />
+
+                    <label id="Label_Shipment" class="Label-Shipment" style="padding-right: 40px; color: #7d4438">Shipment</label>
+                    <br />
+                    <br />
+
+                    <label id="Label_Shipment_Count" class="Label-Shipment-Count" style="padding-right: 40px; color: #7d4438">Shipment Count</label>
+                    <br />
+                    <br />
+
+                    <label id="Label_Credit_Amount" class="Label-Credit-Amount" style="padding-right: 40px; color: #7d4438">Credit Amount (FlexiTrade Tokens)</label>
+                    <br />
+                    <br />
+
+                    <label id="Label_Expiry_Date" class="Label-LoC-Expiry-Date" style="padding-right: 40px; color: #7d4438">Expiry Date</label>
+
+                </div>
+
+                <div class="Shipment-Input-Container" style="width: 35%">
+
+                    <select id="Seller-Input">
+                        <option value="BMW">BMW ( Germany )</option>
+                        <option value="Adidas">Adidas ( Germany )</option>
+                        <option value="Firestar">Firestar ( India )</option>
+                        <option value="Reliance">Reliance ( India )</option>
+                        <option value="Kohinoor">Kohinoor Foods Ltd ( India )</option>
+                        <option value="Eni">Eni ( Italy )</option>
+                        <option value="Finmeccanica">Finmeccanica ( Italy )</option>
+                        <option value="Intel">Intel ( USA )</option>
+                        <option value="PepsiCo">PepsiCo ( USA )</option>
+                        <option value="P & G">Procter & Gamble ( USA )</option>
+                    </select>
+                    <br />
+                    <br />
+                    
+                    <select id="Shipment-Input">
+                        <option value="Cars">Cars</option>
+                        <option value="Apparel">Apparel</option>
+                        <option value="Diamonds">Diamonds</option>
+                        <option value="Processed Oil">Processed Petroleum Oil</option>
+                        <option value="Rice">Rice</option>
+                        <option value="Oil And Gas">Oil & Gas</option>
+                        <option value="Aerospace">Aerospace</option>
+                        <option value="Semiconductors">Semiconductors</option>
+                        <option value="Soda">Soda</option>
+                        <option value="Personal Care">Household & Personal Care</option>
+                    </select>
+                    <br />
+                    <br />
+
+                    <input id="ShipmentCount" type="text">
+                    <br />
+                    <br />
+
+                    <input id="CreditAmountInput" type="text">
+                    <br />
+                    <br />
+
+                    <input id="ExpiryDateInput" type="text">
+
+                </div>
+
+            </div>
+
+            <div class="Shipment-Submit-Input">
+
+                <br />
+                <br />
+                <label id="Label_buffer" style="padding-right: 15%"></label>
+                <button id="Shipment-Order-Submit" class="Shipment-Order-Submit-button">Place Shipment</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+
+
